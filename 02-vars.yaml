@@ -4,5 +4,5 @@
    URL: play.ganesh.com
   tasks: 
    - name: printing the URL
-   ansible.builting.debug:
+     ansible.builting.debug:
             msg: value of URL is {{URL}}
