@@ -1,8 +1,8 @@
-- name: Demo on using vars
-  hosts: all
-  vars:
-    URL: play.ganesh.com
+- name: Demo on using vairables 
+  hosts: all 
+  vars:                            # Play-level variables 
+    URL: play.google.com      
   tasks: 
-    - name: printing the URL
-      ansible.builting.debug:
-            msg: value of URL is {{URL}}
+    - name: Printing the URL 
+      ansible.builtin.debug:
+        msg: Value of URL is {{URL}}
