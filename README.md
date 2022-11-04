@@ -31,3 +31,5 @@ How to know the list of all the facts ?
 ```
 ansible all -i hosts -m setup
 ```
+**following command is default one to execuite shell based command**
+ansible -i inv all -e ansible_user=centos -e ansible_password=DevOps -m shell -a "df -h"
