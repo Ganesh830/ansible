@@ -1,8 +1,8 @@
 - name: Demo on using vars
   hosts: all
   vars:
-   URL: play.ganesh.com
+    URL: play.ganesh.com
   tasks: 
-   - name: printing the URL
-     ansible.builting.debug:
+    - name: printing the URL
+      ansible.builting.debug:
             msg: value of URL is {{URL}}
