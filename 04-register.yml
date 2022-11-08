@@ -7,4 +7,4 @@
 
     - name: printing the diskinv variable
       ansible.builtin.debug
-        msg: printing df -h {{diskinv}}  
+        msg: printing df -h {{ diskinv }}  
