@@ -1,10 +1,11 @@
 - name: Demo on using shell module 
-  hosts: all
-  tasks:
-    - name: running a shell Command
+  hosts: all 
+  tasks: 
+    - name: Running a shell commands 
       ansible.builtin.shell: df -h
       register: diskinv
 
-    - name: printing the diskinv variable
-      ansible.builtin.debug
-        msg: printing df -h {{ diskinv }}  
+    - name: Printing the diskinv variable 
+      ansible.builtin.debug: 
+        msg: "{{diskinv}}"
+
