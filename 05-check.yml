@@ -1,5 +1,5 @@
 - name: Check tomcat is runnig or not
-  hosts: all 
+  hosts: prod 
   tasks: 
     - name: installing NTP 
       ansible.builtin.shell: yum install ntp -y
