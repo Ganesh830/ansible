@@ -1,0 +1,13 @@
+- name: Check tomcat is runnig or not
+  hosts: all 
+  tasks: 
+    - name: installing NTP 
+      ansible.builtin.shell: yum install ntp -y
+
+    - name: checking ntp status
+      ansible.builtin.shell: systemctl status ntpd
+      register: out
+
+    - name: printing the variable out 
+      ansible.builtin.debug: 
+        msg: "{{out}}"
