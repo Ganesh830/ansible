@@ -2,5 +2,5 @@
 hosts: all
 tasks: 
  -name: Printing the uptime
-  ansible.builtin.debug:
+  ansible.builtin.debug: 
     msg: printing uptime seconds {{ ansible_uptime_seconds }}
