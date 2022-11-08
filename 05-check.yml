@@ -1,8 +1,9 @@
-- name: Check tomcat is runnig or not
+- name: installing and checking ntp service
   hosts: prod 
   tasks: 
     - name: installing NTP 
       ansible.builtin.shell: yum install ntp -y
+      register: output
 
     - name: checking ntp status
       ansible.builtin.shell: systemctl status ntpd
