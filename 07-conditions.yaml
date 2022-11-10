@@ -3,6 +3,7 @@
   vars:   
     action: true
     foo: fantastic
+    too: imporatant
   tasks: 
     - name: Run this when os is centos 
       ansible.builtin.debug: 
