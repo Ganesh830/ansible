@@ -1,6 +1,7 @@
 - name: Demo on conditions 
   hosts: all  
   vars:   
+    action: true
     foo: fantastic
   tasks: 
     - name: Run this when os is centos 
@@ -15,3 +16,7 @@
     - name: Run the command if "foo" is undefined
       ansible.builtin.shell: I am foo and why am I undefined
       when: foo is undefined 
+
+    - name: Run the command if "too" is undefined
+      ansible.builtin.shell: I am too and why am I undefined
+      when: too is undefined 
